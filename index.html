@@ -1,27 +1,75 @@
 <!DOCTYPE html>
+<html class="dark scroll-smooth" lang="es-AR">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    
+    <title>Salón de Estética Vehicular | Detailing & Lavadero en Villa Vatteone</title>
+    <meta name="description" content="Especialistas en Detailing y Lavado Artesanal en Florencio Varela. Tratamientos cerámicos, limpieza de tapizados y corrección de laca. ¡Reservá tu turno hoy!">
+    <meta name="keywords" content="detailing, lavadero de autos, villa vatteone, florencio varela, tratamiento ceramico, limpieza tapizados, pulido autos">
+    <meta name="author" content="Salón de Estética Vehicular">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tusitio.com/">
+    <meta property="og:title" content="Salón de Estética Vehicular - Detailing Premium">
+    <meta property="og:description" content="Transformamos tu vehículo. Calidad artesanal y tecnología de punta en Villa Vatteone.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=1200&auto=format&fit=crop">
 
-<html class="dark" lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Salón de Estética Vehicular - Detailing &amp; Lavadero</title>
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind CSS -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<!-- Theme Configuration -->
-<script id="tailwind-config">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoDetailing",
+      "name": "Salón de Estética Vehicular",
+      "image": "https://images.unsplash.com/photo-1601362840469-51e4d8d58785",
+      "telephone": "+5491126485578",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Florida 101",
+        "addressLocality": "Villa Vatteone",
+        "addressRegion": "Buenos Aires",
+        "postalCode": "1888",
+        "addressCountry": "AR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -34.8, 
+        "longitude": -58.2
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "priceRange": "$$"
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <script>
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     colors: {
                         "primary": "#ec1313",
+                        "primary-dark": "#b90e0e",
                         "background-light": "#f8f6f6",
-                        "background-dark": "#1a0f0f", /* Deep dark red-black tone */
+                        "background-dark": "#1a0f0f",
                         "carbon": "#222222",
                     },
                     fontFamily: {
@@ -30,466 +78,614 @@
                     },
                     backgroundImage: {
                         'carbon-fiber': "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%232a2a2a' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E\")",
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
                     }
                 },
             },
         }
     </script>
-<style>
-        /* Custom scrollbar for premium feel */
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #111;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #ec1313;
-            border-radius: 5px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #ff3333;
-        }
-        
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
 
-        .text-glow {
-            text-shadow: 0 0 10px rgba(236, 19, 19, 0.5);
-        }
+    <style>
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #111; }
+        ::-webkit-scrollbar-thumb { background: #ec1313; border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: #ff3333; }
+        
+        .text-glow { text-shadow: 0 0 10px rgba(236, 19, 19, 0.5); }
+        
+        /* Utility for gallery modal */
+        .modal-open { overflow: hidden; }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display antialiased text-white selection:bg-primary selection:text-white">
-<!-- Sticky WhatsApp FAB -->
-<a class="fixed bottom-6 right-6 z-50 group" href="#">
-<div class="relative flex items-center justify-center size-14 rounded-full bg-[#25D366] text-white shadow-[0_0_20px_rgba(37,211,102,0.4)] hover:shadow-[0_0_30px_rgba(37,211,102,0.6)] hover:scale-110 transition-all duration-300">
-<span class="material-symbols-outlined text-3xl">chat</span>
-</div>
-<div class="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-white text-black px-3 py-1 rounded-lg text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-lg pointer-events-none">
+
+<body class="bg-background-light dark:bg-background-dark font-display antialiased text-white selection:bg-primary selection:text-white relative">
+
+    <script>const WHATSAPP_NUMBER = "5491126485578";</script>
+
+    <a id="whatsapp-fab" class="fixed bottom-6 right-6 z-50 group transition-transform hover:scale-110 duration-300" 
+       href="https://wa.me/5491126485578?text=Hola,%20quisiera%20reservar%20un%20turno." 
+       target="_blank" aria-label="Contactar por WhatsApp">
+        <div class="relative flex items-center justify-center size-14 rounded-full bg-[#25D366] text-white shadow-[0_0_20px_rgba(37,211,102,0.4)] group-hover:shadow-[0_0_30px_rgba(37,211,102,0.6)]">
+            <span class="material-symbols-outlined text-3xl">chat</span>
+        </div>
+        <div class="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-white text-black px-3 py-1 rounded-lg text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-lg pointer-events-none">
             Turnos por WhatsApp
         </div>
-</a>
-<!-- Wrapper for carbon fiber texture background -->
-<div class="min-h-screen w-full flex flex-col bg-background-dark bg-carbon-fiber bg-fixed">
-<!-- Navigation -->
-<header class="sticky top-0 z-40 w-full backdrop-blur-md bg-background-dark/80 border-b border-white/10">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex items-center justify-between h-20">
-<!-- Logo -->
-<div class="flex items-center gap-3">
-<div class="size-10 flex items-center justify-center rounded-lg bg-primary/10 border border-primary/20 text-primary">
-<span class="material-symbols-outlined text-2xl">directions_car</span>
-</div>
-<div class="flex flex-col">
-<h1 class="text-white text-lg font-bold leading-tight tracking-tight">SALÓN DE ESTÉTICA</h1>
-<span class="text-xs text-gray-400 font-medium tracking-widest uppercase">Vehicular</span>
-</div>
-</div>
-<!-- Desktop Menu -->
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors" href="#servicios">SERVICIOS</a>
-<a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors" href="#galeria">GALERÍA</a>
-<a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors" href="#ubicacion">UBICACIÓN</a>
-<a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors" href="#testimonios">RESEÑAS</a>
-</nav>
-<!-- CTA -->
-<div class="hidden md:flex">
-<button class="bg-primary hover:bg-red-600 text-white text-sm font-bold px-5 py-2.5 rounded-lg transition-all shadow-[0_0_15px_rgba(236,19,19,0.3)] hover:shadow-[0_0_25px_rgba(236,19,19,0.5)] flex items-center gap-2">
-<span>RESERVAR TURNO</span>
-<span class="material-symbols-outlined text-lg">calendar_month</span>
-</button>
-</div>
-<!-- Mobile Menu Button -->
-<button class="md:hidden text-gray-300 hover:text-white p-2">
-<span class="material-symbols-outlined text-3xl">menu</span>
-</button>
-</div>
-</div>
-</header>
-<!-- Hero Section -->
-<section class="relative w-full h-[650px] flex items-center justify-center overflow-hidden">
-<!-- Background Image with Overlay -->
-<div class="absolute inset-0 z-0">
-<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/80 to-transparent z-10"></div>
-<div class="absolute inset-0 bg-gradient-to-r from-background-dark via-transparent to-transparent z-10"></div>
-<div class="w-full h-full bg-cover bg-center" data-alt="Close up of a shiny black luxury car with red taillights in a dark garage" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCKsz1VJ0Bvq8aona31PRCfNR4GNptNmvULGbF55qPWHpYNOy8L1GQ-BKSOtwUkoLeU0A0_Mdg5iNqlYUHd9wFyPhBRIcuwMxkR-Rkt9HtaPNhsxfBvGKtjuQcjBJdHpppUjt2-XVdqMR6ck0-hx78_XGuP2yufCkQ3yG75SbhWzxhOP_PKg52BUF1pNk113GGZ-eh1QW9zj0FZnNCpx6__IhxLBb_uTOoJMl7kyYeFCQcpDXLQxBmYbIlZdrihQVqqRdP6A9iWEF4');">
-</div>
-</div>
-<div class="relative z-20 max-w-7xl mx-auto px-4 w-full flex flex-col items-start gap-6">
-<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm">
-<span class="size-2 rounded-full bg-primary animate-pulse"></span>
-<span class="text-xs font-bold tracking-widest uppercase text-white">Abierto ahora en Villa Vatteone</span>
-</div>
-<h1 class="text-5xl md:text-7xl font-black text-white leading-[0.9] tracking-tighter max-w-3xl drop-shadow-2xl uppercase">
+    </a>
+
+    <div class="min-h-screen w-full flex flex-col bg-background-dark bg-carbon-fiber bg-fixed">
+        
+        <header class="sticky top-0 z-40 w-full backdrop-blur-md bg-background-dark/90 border-b border-white/10 transition-all duration-300" id="navbar">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <a href="#" class="flex items-center gap-3 group">
+                        <div class="size-10 flex items-center justify-center rounded-lg bg-primary/10 border border-primary/20 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-2xl">directions_car</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <h1 class="text-white text-lg font-bold leading-tight tracking-tight">SALÓN DE ESTÉTICA</h1>
+                            <span class="text-xs text-gray-400 font-medium tracking-widest uppercase group-hover:text-primary transition-colors">Vehicular</span>
+                        </div>
+                    </a>
+
+                    <nav class="hidden md:flex items-center gap-8">
+                        <a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors" href="#servicios">SERVICIOS</a>
+                        <a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors" href="#precios">PRECIOS</a>
+                        <a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors" href="#galeria">GALERÍA</a>
+                        <a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors" href="#ubicacion">UBICACIÓN</a>
+                    </nav>
+
+                    <div class="hidden md:flex">
+                        <a href="https://wa.me/5491126485578?text=Hola,%20quiero%20reservar%20un%20turno." target="_blank"
+                           class="bg-primary hover:bg-primary-dark text-white text-sm font-bold px-5 py-2.5 rounded-lg transition-all shadow-[0_0_15px_rgba(236,19,19,0.3)] hover:shadow-[0_0_25px_rgba(236,19,19,0.5)] flex items-center gap-2">
+                            <span>RESERVAR TURNO</span>
+                            <span class="material-symbols-outlined text-lg">calendar_month</span>
+                        </a>
+                    </div>
+
+                    <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white p-2 focus:outline-none" aria-label="Abrir menú">
+                        <span class="material-symbols-outlined text-3xl">menu</span>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden bg-[#150a0a] border-b border-white/10 absolute w-full">
+                <div class="px-4 pt-2 pb-6 space-y-2">
+                    <a href="#servicios" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-white/5">Servicios</a>
+                    <a href="#precios" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-white/5">Precios</a>
+                    <a href="#galeria" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-white/5">Galería</a>
+                    <a href="#ubicacion" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-white/5">Ubicación</a>
+                    <a href="https://wa.me/5491126485578" target="_blank" class="block mt-4 text-center bg-primary text-white py-3 rounded-lg font-bold">RESERVAR AHORA</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="relative w-full h-[650px] flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/80 to-transparent z-10"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-background-dark via-transparent to-transparent z-10"></div>
+                <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=1974&auto=format&fit=crop" 
+                     alt="Close up of a shiny black luxury car detailing" 
+                     class="w-full h-full object-cover animate-fade-in"
+                     loading="eager">
+            </div>
+
+            <div class="relative z-20 max-w-7xl mx-auto px-4 w-full flex flex-col items-start gap-6 pt-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm animate-[fadeIn_1s_ease-out_0.2s_both]">
+                    <span class="size-2 rounded-full bg-primary animate-pulse"></span>
+                    <span class="text-xs font-bold tracking-widest uppercase text-white">Abierto ahora en Villa Vatteone</span>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-black text-white leading-[0.9] tracking-tighter max-w-3xl drop-shadow-2xl uppercase animate-[fadeIn_1s_ease-out_0.4s_both]">
                     Dejá tu auto <br/>
-<span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-500">como nuevo</span>
-</h1>
-<p class="text-gray-300 text-lg md:text-xl max-w-xl font-body font-light border-l-4 border-primary pl-4">
-                    Salón de Estética Vehicular. Calidad artesanal, tecnología de punta y pasión por los fierros.
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-red-500 to-white">como nuevo</span>
+                </h1>
+                
+                <p class="text-gray-300 text-lg md:text-xl max-w-xl font-body font-light border-l-4 border-primary pl-4 animate-[fadeIn_1s_ease-out_0.6s_both]">
+                    Salón de Estética Vehicular. Calidad artesanal, tecnología de punta y pasión por los fierros. Recuperamos el brillo de fábrica.
                 </p>
-<div class="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto">
-<button class="h-12 px-8 rounded-lg bg-primary text-white font-bold text-base tracking-wide shadow-[0_0_20px_rgba(236,19,19,0.4)] hover:shadow-[0_0_30px_rgba(236,19,19,0.6)] hover:bg-red-600 transition-all flex items-center justify-center gap-2">
+                
+                <div class="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto animate-[fadeIn_1s_ease-out_0.8s_both]">
+                    <a href="https://wa.me/5491126485578?text=Hola,%20quiero%20un%20turno." target="_blank"
+                       class="h-12 px-8 rounded-lg bg-primary text-white font-bold text-base tracking-wide shadow-[0_0_20px_rgba(236,19,19,0.4)] hover:shadow-[0_0_30px_rgba(236,19,19,0.6)] hover:bg-primary-dark transition-all flex items-center justify-center gap-2">
                         QUIERO UN TURNO
                         <span class="material-symbols-outlined text-xl">arrow_forward</span>
-</button>
-<button class="h-12 px-8 rounded-lg bg-white/5 border border-white/10 text-white font-bold text-base tracking-wide hover:bg-white/10 transition-all flex items-center justify-center gap-2 backdrop-blur-md">
+                    </a>
+                    <a href="#servicios" class="h-12 px-8 rounded-lg bg-white/5 border border-white/10 text-white font-bold text-base tracking-wide hover:bg-white/10 transition-all flex items-center justify-center gap-2 backdrop-blur-md">
                         VER SERVICIOS
-                    </button>
-</div>
-</div>
-</section>
-<!-- Services Section -->
-<section class="py-24 px-4 relative" id="servicios">
-<div class="max-w-7xl mx-auto">
-<div class="flex flex-col items-center text-center mb-16">
-<span class="text-primary font-bold tracking-[0.2em] text-sm uppercase mb-2">Especialistas</span>
-<h2 class="text-4xl md:text-5xl font-bold text-white uppercase tracking-tight">Nuestros Servicios</h2>
-<div class="h-1 w-24 bg-primary mt-4 rounded-full"></div>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-<!-- Service Card 1: Lavadero -->
-<div class="group relative bg-[#1c1c1c] border border-white/5 rounded-xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(236,19,19,0.1)]">
-<div class="absolute top-0 right-0 p-4 z-20">
-<span class="px-3 py-1 bg-primary text-white text-xs font-bold rounded uppercase tracking-wider shadow-lg">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 px-4 relative" id="servicios">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col items-center text-center mb-16">
+                    <span class="text-primary font-bold tracking-[0.2em] text-sm uppercase mb-2">Especialistas</span>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white uppercase tracking-tight">Nuestros Servicios</h2>
+                    <div class="h-1 w-24 bg-primary mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="group relative bg-[#1c1c1c] border border-white/5 rounded-xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(236,19,19,0.1)]">
+                        <div class="absolute top-0 right-0 p-4 z-20">
+                            <span class="px-3 py-1 bg-primary text-white text-xs font-bold rounded uppercase tracking-wider shadow-lg">
                                 Cuidado nivel showroom
                             </span>
-</div>
-<div class="h-64 w-full overflow-hidden">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Hand washing a luxury car with foam sponge" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBJbOibRdRzUsGTI7m97jVHTIzBL3j-Si_-kU3JO0GwGhtJpQuJ5Fef5o-uOK_81CC0JoeOpC0o_4-WX6nchbWURJniXKX2R1122GGvfHepQb1lLausjWx8MgnwYMtPnqlJgjmv21E5Jeo4wQNusxXUAEgIXYW4cvxa_6rh1dZ5LNy1BDIScdpmFT5YPEaaDnsTKWZgOnNeo_XD2cGMCTaEfj5MXAg2qK9O4umW6u4f0In-CLBCpl59uf7luWUlB_QBSEgGq2g2uiE');">
-</div>
-</div>
-<div class="p-8">
-<div class="flex items-center gap-3 mb-4 text-primary">
-<span class="material-symbols-outlined text-3xl">water_drop</span>
-<h3 class="text-2xl font-bold text-white tracking-tight uppercase">Lavadero Artesanal</h3>
-</div>
-<p class="text-gray-400 mb-6 font-body leading-relaxed">
-                                No es solo lavar, es cuidar. Incluye lavado con micro-fibra premium, limpieza detallada de motor, aspirado profundo de interiores y terminación a mano para un acabado impecable.
+                        </div>
+                        <div class="h-64 w-full overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=1000&auto=format&fit=crop" 
+                                 alt="Lavado artesanal de auto con espuma" 
+                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+                        </div>
+                        <div class="p-8">
+                            <div class="flex items-center gap-3 mb-4 text-primary">
+                                <span class="material-symbols-outlined text-3xl">water_drop</span>
+                                <h3 class="text-2xl font-bold text-white tracking-tight uppercase">Lavadero Artesanal</h3>
+                            </div>
+                            <p class="text-gray-400 mb-6 font-body leading-relaxed">
+                                No es solo lavar, es cuidar. Incluye lavado con micro-fibra premium, limpieza detallada de motor, aspirado profundo de interiores y terminación a mano.
                             </p>
-<ul class="space-y-2 mb-8 text-gray-300 text-sm font-medium">
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
-                                    Shampoo pH neutro
-                                </li>
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
-                                    Secado sin contacto
-                                </li>
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
-                                    Hidratación de plásticos
-                                </li>
-</ul>
-<button class="w-full py-3 rounded bg-white/5 border border-white/10 hover:bg-primary hover:border-primary text-white font-bold transition-colors uppercase text-sm tracking-widest">
-                                Ver Detalles
-                            </button>
-</div>
-</div>
-<!-- Service Card 2: Detailing -->
-<div class="group relative bg-[#1c1c1c] border border-white/5 rounded-xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(236,19,19,0.1)]">
-<div class="absolute top-0 right-0 p-4 z-20">
-<span class="px-3 py-1 bg-zinc-800 text-primary border border-primary/30 text-xs font-bold rounded uppercase tracking-wider shadow-lg">
+                            <ul class="space-y-2 mb-8 text-gray-300 text-sm font-medium">
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Shampoo pH neutro</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Secado sin contacto / Microfibra</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Hidratación de plásticos</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="group relative bg-[#1c1c1c] border border-white/5 rounded-xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(236,19,19,0.1)]">
+                        <div class="absolute top-0 right-0 p-4 z-20">
+                            <span class="px-3 py-1 bg-zinc-800 text-primary border border-primary/30 text-xs font-bold rounded uppercase tracking-wider shadow-lg">
                                 Protección extrema
                             </span>
-</div>
-<div class="h-64 w-full overflow-hidden">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Polishing machine working on car paint correction" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAtsTuouAwhZdP8ZVUIWskDiYH2lCvLIAsONLQ-TS85krABH65sV2r_Mhh6_k0YD0OSUSotDuXOi_8AYJAy-LUkuoqYSaVxiqu671D6tJdOPUqrI5_saGoSU-2wyQRFPuUyxSs8vUACcUIcpl6vzUTj6nk5qeFKHmsYwcfqJuqNtIORGT-070_1e4ttOXRFF8VjepWWPtyLyLDMVh7yo-kfA7a4Kn3qnKqoBPIczoXG0Ke-5iHLlOzBT9bWQo7Y4uc7NPRcllLQDwg');">
-</div>
-</div>
-<div class="p-8">
-<div class="flex items-center gap-3 mb-4 text-primary">
-<span class="material-symbols-outlined text-3xl">auto_awesome</span>
-<h3 class="text-2xl font-bold text-white tracking-tight uppercase">Detailing Profesional</h3>
-</div>
-<p class="text-gray-400 mb-6 font-body leading-relaxed">
-                                Llevamos el brillo al siguiente nivel. Tratamientos cerámicos de larga duración, corrección de laca multi-paso y protección acrílica para blindar tu vehículo contra los elementos.
+                        </div>
+                        <div class="h-64 w-full overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?q=80&w=1000&auto=format&fit=crop" 
+                                 alt="Pulido y corrección de pintura auto" 
+                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+                        </div>
+                        <div class="p-8">
+                            <div class="flex items-center gap-3 mb-4 text-primary">
+                                <span class="material-symbols-outlined text-3xl">auto_awesome</span>
+                                <h3 class="text-2xl font-bold text-white tracking-tight uppercase">Detailing Profesional</h3>
+                            </div>
+                            <p class="text-gray-400 mb-6 font-body leading-relaxed">
+                                Llevamos el brillo al siguiente nivel. Tratamientos cerámicos de larga duración, corrección de laca multi-paso y protección acrílica.
                             </p>
-<ul class="space-y-2 mb-8 text-gray-300 text-sm font-medium">
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
-                                    Corrección de pintura (Swirls/Rayas)
-                                </li>
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
-                                    Tratamientos Cerámicos (3-5 años)
-                                </li>
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
-                                    Limpieza de tapizados
-                                </li>
-</ul>
-<button class="w-full py-3 rounded bg-white/5 border border-white/10 hover:bg-primary hover:border-primary text-white font-bold transition-colors uppercase text-sm tracking-widest">
-                                Ver Detalles
-                            </button>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Gallery Section -->
-<section class="py-20 bg-black/40 border-y border-white/5" id="galeria">
-<div class="max-w-7xl mx-auto px-4">
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-<div class="flex flex-col">
-<h2 class="text-3xl md:text-4xl font-bold text-white uppercase tracking-tight">Resultados Reales</h2>
-<p class="text-gray-400 mt-2 font-body">Trabajos realizados en nuestro taller.</p>
-</div>
-<a class="text-primary font-bold hover:text-white transition-colors flex items-center gap-2 group" href="#">
-                        VER GALERÍA COMPLETA
-                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
-</a>
-</div>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
-<!-- Image 1 -->
-<div class="md:col-span-2 md:row-span-2 rounded-lg overflow-hidden relative group cursor-pointer border border-white/10">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Shiny red sports car hood reflecting studio lights" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuByClklLgBn-OP22SDtM-TRT8QuX0T0SzQUYxbmV1mVsdkKLSRljbB6qVPCOFamAKKBVBl4CpMytYBvprRo8C0daG0EYF2SY-mA-z04EZVB-Cae8qnrLEYPSFvokwOprf76nnY7-FIRsQWxr_XxO_d9a8eZvHwMojWV0DTh4Aj4TRCBWg8gTOzGOfjlVC9Zpf1Jh8HytLJuxiHSDQ2D1u5cN-B5HRdt-VP-IFg-Hk9fP1dN-qqImpsckclzLKI_qs1KLunc8HYSDqY');">
-</div>
-<div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<span class="material-symbols-outlined text-white text-4xl">zoom_in</span>
-</div>
-</div>
-<!-- Image 2 -->
-<div class="rounded-lg overflow-hidden relative group cursor-pointer border border-white/10">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Detail of clean alloy wheel rim" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCRgPEhqyZAYUDvQNRC-bTuC4qUwil9ifCzUSY6Wuy-3KqGcSxF1kA3Du3Y4ZzF94jFZ18ifuM5_DU9aOSmiWicv6YsQOleazUa24VfgBh8du5ErrcQHKeikzDxVvNSe27wD2Nl_ova89G-m0QuOvfP-7jJo0WE1fHJiQsOWplYTg5s5qri2zjRXudeS7-f2LbDrV6zNm3L_dc2P9y8N2-jdyB84JPsx2Be5NsiPGOstYwzBOrvgEtsuyLegBxVAifAMzwkXJNRRaI');">
-</div>
-<div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-</div>
-</div>
-<!-- Image 3 -->
-<div class="rounded-lg overflow-hidden relative group cursor-pointer border border-white/10">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Interior leather car seats clean" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDPpKeCxNnYYVEMmrs3hxwpXoXmUhFXJwyqHrYK55VBebXZkZgvtEO_aEsRXKZbtN9AJgBFwitWQGJ6ldP3eOBFPdj1CwBr2F0rugpo1LzTW286p7Fhp78vaem5cm5-O7z-aqhGOH4EI2ORKFS7IQzgdzQAgaxYqMryjeqR7dnGzJAvlXkFZ1W6HTwnoNZdBSlU7AA5hq5dTgc7CTJy1BmJoFFI0b2OaFOH0ixYNQlm4b-ojX0ChuVJYCSQ-DshSNd9PXv-0nHf76o');">
-</div>
-<div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-</div>
-</div>
-<!-- Image 4 -->
-<div class="rounded-lg overflow-hidden relative group cursor-pointer border border-white/10">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Polishing compound on car hood" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDtBOj45P05_i2XyO25OvBw8epR8FF4fLwj4XtvA1m1fhX3fsUp3Lo0Ds1C2xv_3FWyT4wTcEBBR3vswdlaMrFINuAvqOO11GkB5FL1BhR_GEubhADalBnWN_AHYukW6pwt68jvw7q4K3xOt7HSu2g2-OrfPxdRqQ4d6Wowj-8VY_QXTSOJ8r-_R2DGHEJh5hnq6ZDqKDryrQGksO49ZC3mbihp1mw2HZ7I5uV3H1DbXqKUgLEuzPy9B6vM8xvfufjyJlqb6mcm_qo');">
-</div>
-<div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-</div>
-</div>
-<!-- Image 5 -->
-<div class="rounded-lg overflow-hidden relative group cursor-pointer border border-white/10">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Before and after ceramic coating reflection" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAtSmKsOEe4y6dt0ZtgIUntwl3xgvp7K6uk7kQsn8RTj5cM1LfPROMXX3og0lICuKgLBuIpedYFpNFvxykuWQUl2t0KTK4lUBtawDdQXlgkiXREeOS_o55OvjpNgMfpt5WvZb9A1cX5K3Hi55CtpaYI1u-8Lh9SZZ4OxvSUMbNVOCo3kZ70Joom7ALv06gx-Oh_ApW5oJoJ0_FtQzZZWW5va-EHqoIkaydtnuyk78Qj-uA4DTC3rhTcyhMRnck2HAksKhDOKuHOXyI');">
-</div>
-<div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Location & Trust Section -->
-<section class="py-24 px-4 relative overflow-hidden" id="ubicacion">
-<!-- Decorative background elements -->
-<div class="absolute -right-40 top-20 w-96 h-96 bg-primary/10 rounded-full blur-[100px] pointer-events-none"></div>
-<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-<!-- Text Content -->
-<div class="order-2 lg:order-1 flex flex-col items-start space-y-8">
-<div>
-<span class="text-primary font-bold tracking-widest uppercase mb-2 block">Ubicación</span>
-<h2 class="text-4xl md:text-5xl font-bold text-white uppercase leading-none mb-4">
+                            <ul class="space-y-2 mb-8 text-gray-300 text-sm font-medium">
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Corrección de pintura (Swirls/Rayas)</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Tratamientos Cerámicos (3-5 años)</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Limpieza de tapizados</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-black/20" id="precios">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white uppercase tracking-tight">Packs Destacados</h2>
+                    <p class="text-gray-400 mt-2">Consultá por tu modelo específico.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-[#150a0a] p-6 rounded-2xl border border-white/10 flex flex-col">
+                        <h3 class="text-xl font-bold text-white uppercase">Lavado Premium</h3>
+                        <div class="text-3xl font-bold text-primary mt-4 mb-2">Consultar</div>
+                        <p class="text-sm text-gray-400 mb-6">Ideal para mantenimiento semanal.</p>
+                        <ul class="space-y-3 mb-8 text-sm text-gray-300 flex-grow">
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check</span> Lavado carrocería</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check</span> Aspirado completo</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check</span> Cera rápida</li>
+                        </ul>
+                        <a href="https://wa.me/5491126485578?text=Info%20Lavado%20Premium" target="_blank" class="block w-full py-3 text-center border border-white/20 rounded-lg hover:bg-white hover:text-black transition-colors font-bold uppercase text-xs">Consultar</a>
+                    </div>
+                    
+                    <div class="bg-[#220c0c] p-6 rounded-2xl border border-primary/50 relative transform md:-translate-y-4 shadow-[0_0_30px_rgba(236,19,19,0.15)] flex flex-col">
+                        <div class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">POPULAR</div>
+                        <h3 class="text-xl font-bold text-white uppercase">Interior + Motor</h3>
+                        <div class="text-3xl font-bold text-white mt-4 mb-2">Consultar</div>
+                        <p class="text-sm text-gray-400 mb-6">Renovación total del habitáculo.</p>
+                        <ul class="space-y-3 mb-8 text-sm text-gray-300 flex-grow">
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check</span> Limpieza de tapizados</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check</span> Detallado de motor a vapor</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check</span> Acondicionamiento de plásticos</li>
+                        </ul>
+                        <a href="https://wa.me/5491126485578?text=Info%20Interior%20Motor" target="_blank" class="block w-full py-3 text-center bg-primary text-white rounded-lg hover:bg-red-600 transition-colors font-bold uppercase text-xs shadow-lg">Agendar</a>
+                    </div>
+
+                    <div class="bg-[#150a0a] p-6 rounded-2xl border border-white/10 flex flex-col">
+                        <h3 class="text-xl font-bold text-white uppercase">Tratamiento Cerámico</h3>
+                        <div class="text-3xl font-bold text-primary mt-4 mb-2">Consultar</div>
+                        <p class="text-sm text-gray-400 mb-6">La máxima protección posible.</p>
+                        <ul class="space-y-3 mb-8 text-sm text-gray-300 flex-grow">
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check</span> Corrección de laca (Pulido)</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check</span> Sellado Cerámico (Cquartz/Gyeon)</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check</span> Mantenimiento incluido (1er mes)</li>
+                        </ul>
+                        <a href="https://wa.me/5491126485578?text=Info%20Ceramico" target="_blank" class="block w-full py-3 text-center border border-white/20 rounded-lg hover:bg-white hover:text-black transition-colors font-bold uppercase text-xs">Consultar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-black/40 border-y border-white/5" id="galeria">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                    <div class="flex flex-col">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white uppercase tracking-tight">Resultados Reales</h2>
+                        <p class="text-gray-400 mt-2 font-body">Trabajos realizados en nuestro taller.</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]" id="gallery-grid">
+                    <div class="md:col-span-2 md:row-span-2 rounded-lg overflow-hidden relative group cursor-pointer border border-white/10 gallery-item">
+                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1000&auto=format&fit=crop" 
+                             alt="Auto deportivo rojo brillante" 
+                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+                            <span class="material-symbols-outlined text-white text-4xl">zoom_in</span>
+                        </div>
+                    </div>
+                    <div class="rounded-lg overflow-hidden relative group cursor-pointer border border-white/10 gallery-item">
+                        <img src="https://images.unsplash.com/photo-1621256193710-867a5b512591?q=80&w=500&auto=format&fit=crop" 
+                             alt="Llanta de aleación limpia" 
+                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+                             <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                        </div>
+                    </div>
+                    <div class="rounded-lg overflow-hidden relative group cursor-pointer border border-white/10 gallery-item">
+                        <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=500&auto=format&fit=crop" 
+                             alt="Interior de cuero limpio" 
+                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+                            <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                        </div>
+                    </div>
+                    <div class="rounded-lg overflow-hidden relative group cursor-pointer border border-white/10 gallery-item">
+                        <img src="https://images.unsplash.com/photo-1605218427306-afa54388cf48?q=80&w=500&auto=format&fit=crop" 
+                             alt="Pulidora sobre capot" 
+                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+                            <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                        </div>
+                    </div>
+                    <div class="rounded-lg overflow-hidden relative group cursor-pointer border border-white/10 gallery-item">
+                        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=500&auto=format&fit=crop" 
+                             alt="Reflejo cerámico" 
+                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+                            <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="lightbox" class="fixed inset-0 z-[60] bg-black/95 hidden items-center justify-center p-4 backdrop-blur-sm opacity-0 transition-opacity duration-300">
+            <button id="lightbox-close" class="absolute top-4 right-4 text-white hover:text-primary transition-colors">
+                <span class="material-symbols-outlined text-5xl">close</span>
+            </button>
+            <img id="lightbox-img" src="" alt="Zoomed image" class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl">
+        </div>
+
+        <section class="py-24 px-4 relative overflow-hidden" id="ubicacion">
+            <div class="absolute -right-40 top-20 w-96 h-96 bg-primary/10 rounded-full blur-[100px] pointer-events-none"></div>
+            
+            <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1 flex flex-col items-start space-y-8">
+                    <div>
+                        <span class="text-primary font-bold tracking-widest uppercase mb-2 block">Ubicación</span>
+                        <h2 class="text-4xl md:text-5xl font-bold text-white uppercase leading-none mb-4">
                             Vení a conocernos en <br/><span class="text-primary">Villa Vatteone</span>
-</h2>
-<p class="text-gray-400 text-lg font-body">
+                        </h2>
+                        <p class="text-gray-400 text-lg font-body">
                             Estamos ubicados estratégicamente para brindarte el mejor servicio. Traé tu auto y dejanos hacer nuestra magia.
                         </p>
-</div>
-<div class="w-full space-y-4">
-<div class="flex items-start gap-4 p-4 rounded-lg bg-white/5 border border-white/10">
-<div class="bg-primary/20 p-3 rounded-lg text-primary">
-<span class="material-symbols-outlined text-2xl">location_on</span>
-</div>
-<div>
-<h4 class="text-white font-bold text-lg">Dirección</h4>
-<p class="text-gray-400 font-body">Florida 101, Villa Vatteone</p>
-<p class="text-gray-500 text-sm mt-1">Florencio Varela, Buenos Aires</p>
-</div>
-</div>
-<div class="flex items-start gap-4 p-4 rounded-lg bg-white/5 border border-white/10">
-<div class="bg-primary/20 p-3 rounded-lg text-primary">
-<span class="material-symbols-outlined text-2xl">schedule</span>
-</div>
-<div>
-<h4 class="text-white font-bold text-lg">Horarios</h4>
-<p class="text-gray-400 font-body">Lunes a Sábado: 08:00 - 18:00 hs</p>
-<p class="text-gray-500 text-sm mt-1">Domingos y Feriados: Cerrado</p>
-</div>
-</div>
-</div>
-<a class="text-white border-b-2 border-primary pb-1 hover:text-primary transition-colors font-bold uppercase tracking-wide flex items-center gap-2" href="https://maps.google.com" target="_blank">
+                    </div>
+                    
+                    <div class="w-full space-y-4">
+                        <div class="flex items-start gap-4 p-4 rounded-lg bg-white/5 border border-white/10">
+                            <div class="bg-primary/20 p-3 rounded-lg text-primary">
+                                <span class="material-symbols-outlined text-2xl">location_on</span>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Dirección</h4>
+                                <p class="text-gray-400 font-body">Florida 101, Villa Vatteone</p>
+                                <p class="text-gray-500 text-sm mt-1">Florencio Varela, Buenos Aires</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 rounded-lg bg-white/5 border border-white/10">
+                            <div class="bg-primary/20 p-3 rounded-lg text-primary">
+                                <span class="material-symbols-outlined text-2xl">schedule</span>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Horarios</h4>
+                                <p class="text-gray-400 font-body">Lunes a Sábado: 08:00 - 18:00 hs</p>
+                                <p class="text-gray-500 text-sm mt-1">Domingos y Feriados: Cerrado</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a class="text-white border-b-2 border-primary pb-1 hover:text-primary transition-colors font-bold uppercase tracking-wide flex items-center gap-2" 
+                       href="https://maps.app.goo.gl/quN4rzfmb9GsHzQR6" 
+                       target="_blank" rel="noopener noreferrer">
                         Abrir en Google Maps
                         <span class="material-symbols-outlined text-sm">open_in_new</span>
-</a>
-</div>
-<!-- Map Component -->
-<div class="order-1 lg:order-2 h-[500px] w-full bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group">
-<!-- Placeholder Static Map -->
-<div class="w-full h-full bg-cover bg-center grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-500" data-location="Villa Vatteone" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCIKfSc6hlXSxqgfgKFAy5_lhN8ahpeOB1LYAx2Kx2yNh_ENTVhgp93OzXDadqaHdDzfOdu1k10P9IiHX-zuSFYi31Pg-bnaRnsMhXMX11xLEU7v5gwImNZ7-O_VnWrNJfq82Fl38JxrdfDrTrBfpyrtTPhpdQtv2zHFfAd_0-iL8kYCZPyTsPvNl4reZ6Abliv70iLN3zsVG_9fxj77TiyQ5jKVkhgjd7XOUpi8_Pm_iBCWQnTchtUCuy7zoqsDi3aDYGJbIZuxyo');">
-</div>
-<!-- Map Pin Overlay -->
-<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-<div class="relative">
-<div class="size-6 bg-primary rounded-full animate-ping absolute top-0 left-0 opacity-75"></div>
-<div class="size-6 bg-primary rounded-full flex items-center justify-center border-2 border-white shadow-lg relative z-10">
-<div class="size-2 bg-white rounded-full"></div>
-</div>
-</div>
-<div class="mt-2 bg-black/80 backdrop-blur text-white text-xs px-3 py-1 rounded shadow-lg font-bold whitespace-nowrap">
+                    </a>
+                </div>
+
+                <div class="order-1 lg:order-2 h-[500px] w-full bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group">
+                    <div class="w-full h-full bg-cover bg-center grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-500" 
+                         style="background-image: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1000&auto=format&fit=crop');">
+                         </div>
+                    
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+                        <div class="relative">
+                            <div class="size-6 bg-primary rounded-full animate-ping absolute top-0 left-0 opacity-75"></div>
+                            <div class="size-6 bg-primary rounded-full flex items-center justify-center border-2 border-white shadow-lg relative z-10">
+                                <div class="size-2 bg-white rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="mt-2 bg-black/80 backdrop-blur text-white text-xs px-3 py-1 rounded shadow-lg font-bold whitespace-nowrap">
                             Salón de Estética
                         </div>
-</div>
-<!-- Overlay Gradient -->
-<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent pointer-events-none"></div>
-</div>
-</div>
-</section>
-<!-- Reviews Section -->
-<section class="py-20 bg-[#150a0a]" id="testimonios">
-<div class="max-w-5xl mx-auto px-4 text-center">
-<h2 class="text-3xl font-bold text-white mb-12 uppercase tracking-wide flex items-center justify-center gap-3">
-<span class="material-symbols-outlined text-primary text-4xl">star</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="py-20 bg-[#150a0a] border-t border-white/5">
+            <div class="max-w-3xl mx-auto px-4">
+                <h2 class="text-2xl font-bold text-white text-center mb-8 uppercase">Preguntas Frecuentes</h2>
+                <div class="space-y-4">
+                    <details class="bg-[#1e1e1e] rounded-lg p-4 group cursor-pointer border border-white/5">
+                        <summary class="flex justify-between items-center font-bold text-white list-none">
+                            ¿Necesito reservar turno?
+                            <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                        </summary>
+                        <p class="text-gray-400 mt-2 text-sm">Sí, trabajamos exclusivamente con turnos para dedicarle el tiempo necesario a cada vehículo y garantizar la mejor calidad.</p>
+                    </details>
+                    <details class="bg-[#1e1e1e] rounded-lg p-4 group cursor-pointer border border-white/5">
+                        <summary class="flex justify-between items-center font-bold text-white list-none">
+                            ¿Cuánto demora un tratamiento cerámico?
+                            <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                        </summary>
+                        <p class="text-gray-400 mt-2 text-sm">Dependiendo del estado de la pintura y el paquete elegido, puede demorar entre 1 a 3 días hábiles.</p>
+                    </details>
+                    <details class="bg-[#1e1e1e] rounded-lg p-4 group cursor-pointer border border-white/5">
+                        <summary class="flex justify-between items-center font-bold text-white list-none">
+                            ¿Qué medios de pago aceptan?
+                            <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                        </summary>
+                        <p class="text-gray-400 mt-2 text-sm">Aceptamos efectivo, transferencias bancarias y Mercado Pago.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-black/20" id="testimonios">
+            <div class="max-w-5xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold text-white mb-12 uppercase tracking-wide flex items-center justify-center gap-3">
+                    <span class="material-symbols-outlined text-primary text-4xl">star</span>
                     Lo que dicen nuestros clientes
                     <span class="material-symbols-outlined text-primary text-4xl">star</span>
-</h2>
-<div class="grid md:grid-cols-3 gap-6">
-<!-- Review 1 -->
-<div class="bg-[#221111] p-6 rounded-lg border border-white/5 text-left relative">
-<span class="material-symbols-outlined absolute top-4 right-4 text-white/10 text-5xl">format_quote</span>
-<div class="flex text-yellow-500 mb-4 text-sm">
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-</div>
-<p class="text-gray-300 font-body text-sm mb-6 leading-relaxed">
+                </h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-[#221111] p-6 rounded-lg border border-white/5 text-left relative">
+                        <span class="material-symbols-outlined absolute top-4 right-4 text-white/10 text-5xl">format_quote</span>
+                        <div class="flex text-yellow-500 mb-4 text-sm">
+                            <span class="material-symbols-outlined fill-current">star</span>
+                            <span class="material-symbols-outlined fill-current">star</span>
+                            <span class="material-symbols-outlined fill-current">star</span>
+                            <span class="material-symbols-outlined fill-current">star</span>
+                            <span class="material-symbols-outlined fill-current">star</span>
+                        </div>
+                        <p class="text-gray-300 font-body text-sm mb-6 leading-relaxed">
                             "Increíble el cambio en mi auto. El tratamiento cerámico vale cada peso, el brillo es impresionante. La atención de los chicos en Villa Vatteone es de primera."
                         </p>
-<div class="flex items-center gap-3">
-<div class="size-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold">JM</div>
-<div>
-<h5 class="text-white font-bold text-sm">Juan Martínez</h5>
-<span class="text-gray-500 text-xs">Hace 2 semanas</span>
-</div>
-</div>
-</div>
-<!-- Review 2 -->
-<div class="bg-[#221111] p-6 rounded-lg border border-white/5 text-left relative transform md:-translate-y-4 shadow-xl border-t-4 border-t-primary">
-<span class="material-symbols-outlined absolute top-4 right-4 text-white/10 text-5xl">format_quote</span>
-<div class="flex text-yellow-500 mb-4 text-sm">
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-</div>
-<p class="text-gray-300 font-body text-sm mb-6 leading-relaxed">
-                            "Llevé la camioneta llena de barro y la dejaron impecable, incluso el motor. Se nota que usan productos de calidad. 100% recomendado el lavadero artesanal."
+                        <div class="flex items-center gap-3">
+                            <div class="size-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold">JM</div>
+                            <div>
+                                <h5 class="text-white font-bold text-sm">Juan Martínez</h5>
+                                <span class="text-gray-500 text-xs">Hace 2 semanas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-[#221111] p-6 rounded-lg border border-white/5 text-left relative transform md:-translate-y-4 shadow-xl border-t-4 border-t-primary">
+                        <span class="material-symbols-outlined absolute top-4 right-4 text-white/10 text-5xl">format_quote</span>
+                        <div class="flex text-yellow-500 mb-4 text-sm">
+                            <span class="material-symbols-outlined fill-current">star</span>
+                            <span class="material-symbols-outlined fill-current">star</span>
+                            <span class="material-symbols-outlined fill-current">star</span>
+                            <span class="material-symbols-outlined fill-current">star</span>
+                            <span class="material-symbols-outlined fill-current">star</span>
+                        </div>
+                        <p class="text-gray-300 font-body text-sm mb-6 leading-relaxed">
+                            "Llevé la camioneta llena de barro y la dejaron impecable, incluso el motor. Se nota que usan productos de calidad. 100% recomendado."
                         </p>
-<div class="flex items-center gap-3">
-<div class="size-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold">LG</div>
-<div>
-<h5 class="text-white font-bold text-sm">Luciano Gómez</h5>
-<span class="text-gray-500 text-xs">Hace 1 mes</span>
-</div>
-</div>
-</div>
-<!-- Review 3 -->
-<div class="bg-[#221111] p-6 rounded-lg border border-white/5 text-left relative">
-<span class="material-symbols-outlined absolute top-4 right-4 text-white/10 text-5xl">format_quote</span>
-<div class="flex text-yellow-500 mb-4 text-sm">
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-<span class="material-symbols-outlined fill-current">star</span>
-</div>
-<p class="text-gray-300 font-body text-sm mb-6 leading-relaxed">
+                        <div class="flex items-center gap-3">
+                            <div class="size-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold">LG</div>
+                            <div>
+                                <h5 class="text-white font-bold text-sm">Luciano Gómez</h5>
+                                <span class="text-gray-500 text-xs">Hace 1 mes</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-[#221111] p-6 rounded-lg border border-white/5 text-left relative">
+                        <span class="material-symbols-outlined absolute top-4 right-4 text-white/10 text-5xl">format_quote</span>
+                        <div class="flex text-yellow-500 mb-4 text-sm">
+                             <span class="material-symbols-outlined fill-current">star</span>
+                            <span class="material-symbols-outlined fill-current">star</span>
+                            <span class="material-symbols-outlined fill-current">star</span>
+                            <span class="material-symbols-outlined fill-current">star</span>
+                            <span class="material-symbols-outlined fill-current">star</span>
+                        </div>
+                        <p class="text-gray-300 font-body text-sm mb-6 leading-relaxed">
                             "Excelente servicio y puntualidad. Me asesoraron muy bien sobre qué tratamiento le convenía a la pintura de mi auto. Volveré seguro."
                         </p>
-<div class="flex items-center gap-3">
-<div class="size-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold">CR</div>
-<div>
-<h5 class="text-white font-bold text-sm">Carla Rodríguez</h5>
-<span class="text-gray-500 text-xs">Hace 3 días</span>
-</div>
-</div>
-</div>
-</div>
-<div class="mt-12">
-<button class="inline-flex items-center gap-2 px-6 py-3 border border-white/20 rounded-full text-white font-bold text-sm hover:bg-white hover:text-black transition-colors">
-<span class="material-symbols-outlined text-lg">g_translate</span>
-                        Leé más reseñas en Google
-                    </button>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<footer class="bg-black text-white pt-16 pb-8 border-t border-white/10">
-<div class="max-w-7xl mx-auto px-4">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-<div class="col-span-1 md:col-span-1">
-<div class="flex items-center gap-2 mb-4 text-white">
-<span class="material-symbols-outlined text-3xl text-primary">directions_car</span>
-<h3 class="font-bold text-xl uppercase tracking-wider">Salón de Estética</h3>
-</div>
-<p class="text-gray-500 text-sm leading-relaxed">
+                        <div class="flex items-center gap-3">
+                            <div class="size-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold">CR</div>
+                            <div>
+                                <h5 class="text-white font-bold text-sm">Carla Rodríguez</h5>
+                                <span class="text-gray-500 text-xs">Hace 3 días</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-[#1a0f0f] border-t border-white/5">
+            <div class="max-w-lg mx-auto px-4 text-center">
+                 <h2 class="text-2xl font-bold text-white mb-6 uppercase">Consultas por Email</h2>
+                 <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-4">
+                     <input type="text" name="nombre" placeholder="Tu Nombre" class="w-full bg-[#111] border border-white/10 rounded p-3 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none" required>
+                     <input type="email" name="email" placeholder="Tu Email" class="w-full bg-[#111] border border-white/10 rounded p-3 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none" required>
+                     <textarea name="mensaje" placeholder="¿En qué podemos ayudarte?" rows="3" class="w-full bg-[#111] border border-white/10 rounded p-3 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none" required></textarea>
+                     <button type="submit" class="w-full bg-white/10 hover:bg-primary text-white font-bold py-3 rounded transition-colors uppercase text-sm tracking-widest">Enviar Consulta</button>
+                 </form>
+            </div>
+        </section>
+
+        <footer class="bg-black text-white pt-16 pb-8 border-t border-white/10">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                    <div class="col-span-1 md:col-span-1">
+                        <div class="flex items-center gap-2 mb-4 text-white">
+                            <span class="material-symbols-outlined text-3xl text-primary">directions_car</span>
+                            <h3 class="font-bold text-xl uppercase tracking-wider">Salón de Estética</h3>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed">
                             Especialistas en detailing y cuidado vehicular de alta gama en la zona sur. Tu auto merece lo mejor.
                         </p>
-</div>
-<div>
-<h4 class="font-bold text-lg mb-4 uppercase tracking-wider text-primary">Servicios</h4>
-<ul class="space-y-2 text-sm text-gray-400">
-<li><a class="hover:text-white transition-colors" href="#">Lavadero Artesanal</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Detailing Interior</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Tratamientos Cerámicos</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Corrección de Laca</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-lg mb-4 uppercase tracking-wider text-primary">Contacto</h4>
-<ul class="space-y-2 text-sm text-gray-400">
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-xs">call</span>
-                                +54 11 1234-5678
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-4 uppercase tracking-wider text-primary">Servicios</h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><a class="hover:text-white transition-colors" href="#servicios">Lavadero Artesanal</a></li>
+                            <li><a class="hover:text-white transition-colors" href="#servicios">Detailing Interior</a></li>
+                            <li><a class="hover:text-white transition-colors" href="#servicios">Tratamientos Cerámicos</a></li>
+                            <li><a class="hover:text-white transition-colors" href="#servicios">Corrección de Laca</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-4 uppercase tracking-wider text-primary">Contacto</h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-xs">call</span>
+                                <a href="tel:+5491126485578" class="hover:text-white transition-colors">+54 9 11 2648-5578</a>
                             </li>
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-xs">mail</span>
+                            <li class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-xs">mail</span>
                                 contacto@salonestetica.com
                             </li>
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-xs">location_on</span>
+                            <li class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-xs">location_on</span>
                                 Florida 101, Villa Vatteone
                             </li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-lg mb-4 uppercase tracking-wider text-primary">Seguinos</h4>
-<div class="flex gap-4">
-<a class="size-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors text-gray-400" href="#">
-<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
-</a>
-<a class="size-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors text-gray-400" href="#">
-<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.468 2.373c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" fill-rule="evenodd"></path></svg>
-</a>
-</div>
-</div>
-</div>
-<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-<p>© 2024 Salón de Estética Vehicular. Todos los derechos reservados.</p>
-<div class="flex gap-4">
-<a class="hover:text-white transition-colors" href="#">Términos</a>
-<a class="hover:text-white transition-colors" href="#">Privacidad</a>
-</div>
-</div>
-</div>
-</footer>
-</div>
-</body></html>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-4 uppercase tracking-wider text-primary">Seguinos</h4>
+                        <div class="flex gap-4">
+                            <a class="size-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors text-gray-400" href="#" aria-label="Instagram">
+                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.468 2.373c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" fill-rule="evenodd"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+                    <p>© 2024 Salón de Estética Vehicular. Todos los derechos reservados.</p>
+                    <div class="flex gap-4">
+                        <a class="hover:text-white transition-colors" href="#">Términos</a>
+                        <a class="hover:text-white transition-colors" href="#">Privacidad</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Mobile Menu Toggle
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const links = document.querySelectorAll('.mobile-link');
+
+            if(btn && menu) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                });
+                // Close menu when clicking a link
+                links.forEach(link => {
+                    link.addEventListener('click', () => {
+                        menu.classList.add('hidden');
+                    });
+                });
+            }
+
+            // 2. Gallery Lightbox Logic
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxClose = document.getElementById('lightbox-close');
+            const galleryItems = document.querySelectorAll('.gallery-item img');
+
+            if(lightbox && lightboxImg) {
+                galleryItems.forEach(img => {
+                    img.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const src = img.getAttribute('src');
+                        // Use higher res image if available, for now use src
+                        lightboxImg.src = src; 
+                        lightbox.classList.remove('hidden', 'opacity-0');
+                        lightbox.classList.add('flex', 'opacity-100');
+                        document.body.classList.add('modal-open');
+                    });
+                });
+
+                const closeLightbox = () => {
+                    lightbox.classList.add('opacity-0');
+                    lightbox.classList.remove('opacity-100');
+                    setTimeout(() => {
+                        lightbox.classList.add('hidden');
+                        lightbox.classList.remove('flex');
+                        document.body.classList.remove('modal-open');
+                        lightboxImg.src = '';
+                    }, 300);
+                };
+
+                lightboxClose.addEventListener('click', closeLightbox);
+                lightbox.addEventListener('click', (e) => {
+                    if (e.target === lightbox) closeLightbox();
+                });
+            }
+
+            // 3. Navbar Scroll Effect (Glassmorphism enhancer)
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    navbar.classList.add('shadow-lg', 'bg-background-dark/95');
+                    navbar.classList.remove('bg-background-dark/80');
+                } else {
+                    navbar.classList.remove('shadow-lg', 'bg-background-dark/95');
+                    navbar.classList.add('bg-background-dark/80');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
